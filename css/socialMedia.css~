@@ -1,0 +1,88 @@
+.wrapper{
+  width: 250px;
+  background-image: url("/images/background.jpg");
+  margin: auto;
+  border-radius: 6px;
+}
+
+.wrapper img {
+    position: relative;
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 5px;
+    height: 255px;
+    width: 250px;
+    border-radius: 4px; 
+    border: solid 1px #FFE4BA;
+}
+
+.social-counter{
+  padding: 3px;
+  display: block;
+}
+
+.count{
+  display: block;
+  padding: 5px 5px;
+  text-align: left;
+  transition: all 0.5s ease;
+}
+
+.count:hover{
+  background: rgba(0,0,0,0.033);
+  transform: scale(1.065);
+}
+
+.count .icon{
+  background: #aaa;
+  display: inline-block;
+  float: left;
+  color: white;
+  font-size: 22px;
+  margin-left: 5px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-shadow: 0 0 3px rgba(0,0,0,0.2);
+  display: table;
+}
+.count .icon i{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.count p{
+  display: inline-block;
+  font-size: 14px;
+  color: #FFE4BA;
+  margin: 7px;
+}
+.count p span{
+  color: #FFE4BA;
+  font-size: 12px;
+  font-weight: bold;
+  padding-right: 1px;
+}
+
+.count .action-btn{
+  float: right;
+  display: inline-block;
+  color: #FFE4BA;
+  padding: 3px 3px;
+  border-radius: 3px;
+  font-size: 15px;
+  margin: 7px;
+}
+
+/*== COLORS ==*/
+.facebook .icon{background:#3b5999;}
+.facebook .action-btn{background:#3b5999;}
+.facebook .icon i{padding-top:2px;}
+
+.twitter .icon{background:#55acee;}
+.twitter .action-btn{background:#55acee;}
+.twitter .icon i{padding-top:2px;}
+
+.instagram .icon{background:#e4405f;}
+.instagram .action-btn{background:#e4405f;}

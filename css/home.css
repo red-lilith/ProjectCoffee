@@ -1,0 +1,221 @@
+body {
+    font-size:14px; 
+    color: #A52B12;
+    font-family: "EB Garamond";
+    background-size: 100%; 
+    background-image: url("/images/background.jpg");
+}
+
+.home {
+    position: absolute; 
+    top: 0;     
+    left: 0;
+    background:url("/images/header.png") no-repeat center;
+    height: 850px; width: 100%;
+    z-index: -1;
+       
+}
+
+A.button1:link, A.button1:visited{    
+    position: relative; 
+    top: 550px; 
+    left: 45%;    
+    font-size: 16px;
+    background-color: transparent;
+    color: #FFE4BA;
+    border: 2px solid #FFE4BA;
+    border-radius: 2px;
+    padding: 10px 30px;
+    text-align: center;
+    display: inline-block;
+    size: 100%;  
+}
+
+A.button1:hover, A.button1:active {
+    background-color: #FFE4BA;
+    color: #A52B12;  
+}
+
+A.menu:link, A.menu:visited{
+    position: relative; 
+    top: 0; 
+    left: 15%;
+    background-color: transparent;
+    color: #FFE4BA;
+    border: 2px solid #FFE4BA;
+    border-radius: 2px;
+    font-family: "EB Garamond";
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: inline-block;
+    size: 100%;
+}
+
+A.menu:hover, A.menu:active {
+    text-decoration: overline;
+    color: #A52B12;
+    background-color: #FFE4BA;
+}
+
+A.log:link, A.log:visited {
+    position: relative; 
+    top: 0; 
+    left: 41%;
+    background-color: transparent;
+    color: #FFE4BA;
+    border: 2px solid #FFE4BA;
+    border-radius: 2px;
+    font-family: "EB Garamond";
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: inline-block;
+    size: 100%;
+}
+
+A.log:hover, A.log:active {
+    text-decoration: overline;
+    color: #A52B12;
+    background-color: #FFE4BA;
+}
+
+li {
+    display: inline;
+    margin: auto;
+}
+
+.bodyHome {
+    background-color: #FFE4BA;
+    position: absolute;  
+    top: 100%;
+    height: 100%;
+    right: 0;
+    text-align: center;
+}
+
+section {
+    margin-top: 10px;
+}
+
+span {
+    padding-top: 10px;
+    font-size: 29px;
+}
+
+p {
+    padding: 0px 10px 10px 10px;
+    font-size: 16px;
+    color: #4D4B4B;
+    font-family: "EB Garamond";
+}
+    
+nav {
+    float: left;
+    width: 200px;
+}
+
+
+.containerCenter {
+    width: 60%;
+    margin: 5px 0 0;
+    overflow: hidden;
+    float: left;
+}
+
+.products {
+    width: 670px;
+    border-radius: 4px;
+    position: relative;
+    float: center;
+}
+
+.products section{
+    margin-top: 0px;
+}
+
+.containerRight {
+    width: 20%;
+    margin: 5px 0px;
+    float: right;
+}
+
+.containerRight img {
+    height: 260px;
+    width: 97%;
+    border: solid 2px #FFE4BA;
+}
+
+.containerRight name {
+    position: relative;
+    font-size: 24px;
+    color: #FFE4BA;
+    margin-top: 1px;
+    padding: 0px;
+}
+
+.containerRight price {
+    position: relative;
+    font-size: 24px;
+    color: #FFE4BA;
+    margin-top: 25px;
+    padding: 0px;
+}
+
+.containerRight h1{
+  width: 100%;
+  background-image: -moz-linear-gradient(#4A0D01, #A52B12);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4A0D01), to(#A52B12));    
+  background-image: -webkit-linear-gradient(#4A0D01, #A52B12);
+  background-image: -o-linear-gradient(#4A0D01, #A52B12);
+  background-image: -ms-linear-gradient(#4A0D01, #A52B12);
+  background-image: linear-gradient(#4A0D01, #A52B12);
+  color: #FFE4BA;
+  font-size: 30px;
+
+}
+
+.options {
+  margin: 5px 20px;
+  float: right;
+  width: 300px;
+  position: relative;
+  border-radius: 4px;
+  padding: 0px;
+
+}
+
+.containerLeft {
+    width: 20%;
+    margin: 5px 0px;
+    float: left;
+
+}
+
+.containerLeft h1{
+  width: 100%;
+  background-image: -moz-linear-gradient(#4A0D01, #A52B12);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4A0D01), to(#A52B12));    
+  background-image: -webkit-linear-gradient(#4A0D01, #A52B12);
+  background-image: -o-linear-gradient(#4A0D01, #A52B12);
+  background-image: -ms-linear-gradient(#4A0D01, #A52B12);
+  background-image: linear-gradient(#4A0D01, #A52B12);
+  color: #FFE4BA;
+  font-size: 25px;
+}
+
+.containerLeft img {
+  width: 250px;
+  height: 198px;
+  border-radius: 6px;
+}
+
+.containerLeft p {
+  color: #FFE4BA;
+  text-align: justify;
+}
+
+}
+

@@ -1,0 +1,55 @@
+
+<?php
+	class updateProfileManager {
+		
+		function updateManagerProfile(){
+			if(isset($_SESSION["session_username"])) {				
+	            $dbCode = $_SESSION['session_code'];
+	            $query = pg_query("SELECT * FROM manager WHERE code_user='".$dbCode."'");
+	            $row = pg_fetch_row($query);   
+	           
+	                         
+	        } 			
+	        return $row;
+
+                               
+		}
+		function saveProfileManager(){
+
+			if(!empty($_POST['passwordManager']) && !empty($_POST['passwordManagerN']) && !empty($_POST['passwordManagerR']) && !empty($_POST['nameManager']) && !empty($_POST['lastNameManager']) && !empty($_POST['userManager'])){
+				$passwordManager= $_POST['passwordManager'];
+				$passwordManagerN = $_POST['passwordManagerN'];
+				$passwordManagerR = $_POST['passwordManagerR'];
+				$nameManager = $_POST['nameManager'];
+				$lastNameManager = $_POST['lastNameManager'];
+				$userManager = $_POST['userManager'];
+				$codeUser = $_SESSION['session_code'];
+
+
+				if($passwordManager == $_SESSION['session_password']){
+					if($passwordManagerN == $passwordManagerR){
+						$sqlUser = "UPDATE users SET login = '".$userManager."', password = '".$passwordManagerR."', last_update = now() WHERE code = '".$codeUser."'";
+
+						$sqlManager = "UPDATE manager SET name = '".$nameManager."', last_name = '".$lastNameManager."', last_update = now() WHERE code_user = '".$codeUser."'";
+						$resultUser = pg_query($sqlUser);
+						$resultManager = pg_query($sqlManager);
+						$message = 'Tu cuenta fue modificada';
+					}else {
+						$message = 'Contraseña nueva no coincide';
+					}
+				}else{
+					$message = 'Rectifique la contraseña Antigua';
+				}
+
+
+			}else{
+				$message = 'Complete los datos';
+			}
+			
+			return $message;
+		}
+
+		
+	}
+
+?>

@@ -1,0 +1,83 @@
+
+.login {
+  width: 96%;
+  margin: auto;
+  border-radius: 6px;
+  background-image: url("/images/background.jpg");
+  
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    border-radius: 4px;
+}
+
+.input {
+  position: relative;
+  width: 70%;
+  margin: 15px 5px;
+  border: none;
+}
+.input span {
+  position: absolute;
+  display: block;
+  color: #CC6666;
+  left: 10px;
+  top: 0px;
+  font-size: 20px;
+}
+.input input {
+  width: 100%;
+  padding: 10px 5px 10px 40px;
+  display: block;
+  border-radius: 4px;
+  transition: 0.2s ease-out;
+  color: #a1a1a1;
+}
+.input input:focus {
+  padding: 10px 5px 10px 40px;
+  outline: 0;
+}
+.submit {
+  width: 45px;
+  height: 45px;
+  display: block;
+  margin: 0 auto 0 auto;
+  background: #FFE4BA;
+  border-radius: 100%;
+  border: 1px solid #A52B12;
+  color: #A52B12;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 7px #FFE4BA;
+  transition: 0.2s ease-out;
+}
+.submit:hover,
+.submit:focus {
+  border-color: #A52B12;
+  background: #A52B12;
+  color: #FFE4BA;
+}
+.feedback {
+  bottom: -50px;
+  width: 100%;
+  text-align: center;
+  color: #FFE4BA;
+  background: #CC6666;
+  padding: 10px 0;
+  font-size: 12px;
+  display: none;
+}
+.feedback:before {
+  bottom: 100%;
+  left: 50%;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(46, 204, 113, 0);
+  border-width: 10px;
+  margin-left: -10px;
+}

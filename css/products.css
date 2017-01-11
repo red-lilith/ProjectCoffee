@@ -1,0 +1,123 @@
+
+/* Hover Card 
+.......................................................................*/
+div.catCard {
+  border: solid 2px #A52B12;
+  background: url("/images/background.jpg");
+  border-radius: 5px; 
+  width: 300px;
+  height: 225px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+div.lowerCatCard {
+  position: absolute; 
+  background: transparent;
+  padding: 5px 0px; 
+  height: 100px;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition:    all 0.6s ease;
+  -o-transition:      all 0.6s ease;
+  transition:         all 0.6s ease;
+}
+
+div.lowerCatCard:hover {
+  opacity: 0.95;
+  bottom: 0;
+  height: 100px;
+}
+div.catCard  div.lowerCatCard { 
+  left: 0; 
+  bottom: -3%;
+  width: 315px;
+}
+div.catCard:hover div.lowerCatCard { 
+  bottom: 0;
+}
+li.catCardList {
+  width:290px;
+  display: inline-block;
+  padding: 5px 10px;
+  float: center;
+  position: relative;
+}
+
+ul.catCardList {
+  float: center;
+}
+#catCardButton {
+  position: absolute;
+  width: 290px;
+  bottom: 3px;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition:    all 0.6s ease;
+  -o-transition:      all 0.6s ease;
+}
+div.lowerCatCard:hover #catCardButton {
+  bottom: 1px;
+}
+
+.catCard img {
+  width: 300px;
+  height: 198px;
+}
+
+/* Button 
+.......................................................................*/
+.button {
+  color: #360F08;
+  font: normal 20px "EB Garamond";
+  border-bottom: solid 4px #FFE4BA;
+  cursor: pointer;
+  padding: 5px 20px !important;
+  letter-spacing: 0 !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E5C58E), to(#FFE4BA));    
+  background-image: -webkit-linear-gradient(#E5C58E, #FFE4BA);
+  background-image: -o-linear-gradient(#E5C58E, #FFE4BA);
+  background-image: -ms-linear-gradient(#E5C58E, #FFE4BA);
+  background-image: linear-gradient(#E5C58E, #FFE4BA);
+  text-align: left;
+
+}
+
+.button span {
+  position: absolute;
+  display: block;
+  color: #360F08;
+  left: 20px;
+  top: 8px;
+  font-size: 20px;
+}
+
+.button:hover {
+  background-color: #FFE4BA;
+  background-image: -moz-linear-gradient(#FFE4BA, #D0B07A);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFE4BA), to(#D0B07A));      
+  background-image: -webkit-linear-gradient(#FFE4BA, #D0B07A);
+  background-image: -o-linear-gradient(#FFE4BA, #D0B07A);
+  background-image: -ms-linear-gradient(#FFE4BA, #D0B07A);
+  background-image: linear-gradient(#FFE4BA, #D0B07A); 
+  border-bottom: solid 2px #000;
+  box-shadow: 0 2px 3px #a8a8a8;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.04);
+  -o-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+}
+.button:active {
+  background: #360F08;
+}
+.button a {
+  color: #360F08;
+  text-align: left;
+  padding: 0px;
+  text-decoration: none;
+}
+.button a:hover {
+  color: #360F08;
+}
+.button:hover {
+	color: #360F08;
+}

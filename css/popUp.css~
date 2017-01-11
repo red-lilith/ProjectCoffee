@@ -1,0 +1,79 @@
+/* Fondo de Modal*/
+.modal {
+    display: none; 
+    position: fixed; /* Permanece en el mismo lugar */
+    z-index: 2; /* Encima */
+    padding-top: 100px; /* Ubicación */
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(54,15,8,0.4); /* Fondo opaco */
+}
+
+/* Contenido de Modal */
+.modal-content {
+    position: relative;
+    background-color: #FFE4BA;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #5F1101;
+    width: 25%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Animación */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* Botón de cerrar */
+.close {
+    color: #FFE4BA;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    font-size: 34px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-head {
+    padding: 2px 16px;
+    background-color: #360F08;
+    color: #FFE4BA;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-body img {
+    height: 160px;
+    width: 210px;
+    float: left;
+    margin: 10px 16px 5px 10px;
+    border: 1px solid #5F1101;
+}
+
+.modal-footer {
+    margin: 12px 0 0 0;
+    padding: 2px 16px;
+    background-color: #360F08;
+    color: #FFE4BA;
+}

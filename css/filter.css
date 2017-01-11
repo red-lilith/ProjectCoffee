@@ -1,0 +1,27 @@
+.filters {
+  width: 390px;
+  margin: 10px 0 0;
+  float: right;
+
+  .categories-list {
+    list-style-type: none;
+    padding: 0 10px 10px;
+
+    &__item {
+      .transition(.3s);
+      padding: 0 3px;
+      cursor: pointer;
+
+      &.active {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .wrapper {
+    max-width: @wrapper_width;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,5 @@
+<link rel="stylesheet" href="css/home.css">
+<ul>
+    <li><a href="index.php?action=logout" class="log" target="_self" >Cerrar Sesión</a></li>
+    <li><a href="index.php?action=profileUpdate" class="log" target="_self">Perfil</a></li>       
+</ul>

@@ -1,0 +1,160 @@
+.register {
+  position: relative;
+  width: 65%;
+  display: table;
+  margin: 0 0 0 5%;
+  border-radius: 6px;
+  background-image: url("/images/background.jpg");
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    border-radius: 4px;
+}
+
+.input {
+  display: table;
+  position: relative;
+  padding: 0px 25px 6px 25px;
+  width: 40%;
+  margin: 2px 20%;
+  color: #A52B12;
+}
+.input span {
+  position: absolute;
+  display: table;
+  padding: 0px 25px 0px 0px;
+  color: #A52B12;
+  margin: -10% 20%;
+  font-size: 20px;
+}
+.input input {
+  background-color: #FFE4BA;
+  width: 100%;
+  padding: 10px 5px 10px 40px;
+  display: block;
+  border: 1px solid #EDEDED;
+  border-radius: 4px;
+  transition: 0.2s ease-out;
+  color: #A52B12;
+}
+
+.input input:focus {
+  padding: 10px 5px 10px 40px;
+  outline: 0;
+  border-color: #A52B12;
+}
+
+.styled-select {
+   display: inline;
+   position: relative;
+   margin: 10px 10px 10px 10px;
+   line-height: 40px; 
+}
+
+.styled-select select {
+   border: 1px solid #A52B12;
+   background-color: #FFE4BA;
+   border-radius: 4px;
+   font-size: 14px;
+   height: 29px;  
+   width: 30%;
+   color: #A52B12;
+}
+
+textarea{
+   background-color: #FFE4BA;
+   border-radius: 4px;
+   color: #A52B12;
+}
+.submit {
+  width: 45px;
+  height: 45px;
+  display: block;
+  position: relative;
+  margin: 3% auto -20px auto;
+  background: #FFE4BA;
+  border-radius: 100%;
+  border: 1px solid #A52B12;
+  color: #A52B12;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 7px #FFE4BA;
+  transition: 0.2s ease-out;
+}
+
+.submit:hover,
+.submit:focus {
+  background: #A52B12;
+  color: #FFE4BA;
+  outline: 0;
+}
+
+.list {
+  width: 70%;
+  border-radius: 6px;
+  margin: 0 0 0 5%;
+  background: url("/images/background.jpg");
+}
+
+.list img {
+    position: relative;
+    float: left;
+    margin: 10px 0% 5px 1px;   
+    height: 65px;
+    width: 60px;
+    border-radius: 4px; 
+    border: solid 1px #FFE4BA;
+}
+
+.list ul{
+    list-style-type: disc;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style-position: inside;
+}
+
+.list ul li{
+    float: left;
+    width: 85%;
+}
+
+.list ul{
+    list-style-type: disc;
+}
+
+.list text {
+    position: relative;
+    float: right;
+    font-size: 20px;
+    color: #FFE4BA;
+    margin: 25px 1px 5px 0px;
+    padding: 0;  
+}
+
+.list close {
+    position: relative;
+    float: left;
+    font-size: 30px;
+    color: #FFE4BA;
+    margin: 15px 1px 5px 2px;
+    padding: 0;
+}
+
+.list header {
+    border-bottom: 1px solid #A52B12;
+    padding-bottom: 15px;
+}
+
+.list total {
+    margin-top: 10px;
+    margin-right: 50%;
+}
+.list span {
+    font-size: 25px;
+    color: #FFE4BA;
+}
+
+
